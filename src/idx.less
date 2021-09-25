@@ -1,0 +1,65 @@
+.container {
+  width: 360px;
+  height: 420px;
+  background-color: #b7d4a8;
+  border: 10px solid #000;
+  border-radius: 15px;
+  margin: 200px auto;
+  position: relative;
+  user-select: none;
+  .box {
+    width: 310px;
+    margin: auto;
+    .screen {
+      position: relative;
+      margin: 20px auto;
+      width: 310px;
+      height: 310px;
+      border: 1px solid #000;
+      #snake {
+        // position: absolute;
+        // float: left;
+        min-width: 10px;
+        min-height: 10px;
+        float: left;
+        overflow: hidden;
+        .head,
+        .body {
+          position: absolute;
+          // float: left;
+          width: 10px;
+          height: 10px;
+          background-color: #000;
+          border: 1px solid #b7d4a8;
+          box-sizing: border-box;
+        }
+      }
+      #food {
+        width: 10px;
+        box-sizing: border-box;
+        height: 10px;
+        position: absolute;
+        left: 30px;
+        top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: space-between;
+        // background-color: white;
+        .fd {
+          background-color: #000;
+          transform: rotate(45deg);
+          //   float: left;
+          width: 4px;
+          height: 4px;
+        }
+      }
+    }
+    .info {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      margin-top: 50px;
+    }
+  }
+}
